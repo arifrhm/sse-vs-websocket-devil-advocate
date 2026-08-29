@@ -1,0 +1,19 @@
+{
+  "name": "typescript-servers",
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "build": "tsc",
+    "start:ws": "node dist/ws-server.js",
+    "start:sse1": "node dist/sse-http1-server.js",
+    "start:sse2": "node dist/sse-http2-server.js"
+  },
+  "dependencies": {
+    "ws": "^8.18.0"
+  },
+  "devDependencies": {
+    "@types/node": "^20.11.0",
+    "@types/ws": "^8.5.10",
+    "typescript": "^5.3.3"
+  }
+}

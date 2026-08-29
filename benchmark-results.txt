@@ -1,0 +1,541 @@
+=== Devil's Advocate Benchmark Suite ===
+Connections: 100000
+Duration: 30 seconds
+Write Interval: 5000 ms
+Date: Sat Aug 29 19:34:40 WIB 2026
+========================================
+
+### Lang: typescript | Mode: ws (ws) | Bidirectional: false
+=== 100K Clustered Load Tester (Master PID: 83454) ===
+- Protocol: WS
+- Total Target Connections: 100000
+- Worker Processes: 10
+- Target Connections per Worker: 10000
+- Local IP Pool: 127.0.0.1, 127.0.0.2, 127.0.0.3, 127.0.0.4, 127.0.0.5, 127.0.0.6, 127.0.0.7, 127.0.0.8
+- Bidirectional Mode: false
+- Duration: 30s
+- Detected Target Server PID: 83408
+[SYS-MEM] Server RSS Memory: 115.67 MB | Total Connected Clients: 4502 / 100000
+[SYS-MEM] Server RSS Memory: 116.39 MB | Total Connected Clients: 4517 / 100000
+[SYS-MEM] Server RSS Memory: 105.63 MB | Total Connected Clients: 4552 / 100000
+[SYS-MEM] Server RSS Memory: 115.70 MB | Total Connected Clients: 3798 / 100000
+[SYS-MEM] Server RSS Memory: 134.69 MB | Total Connected Clients: 7265 / 100000
+[SYS-MEM] Server RSS Memory: 153.11 MB | Total Connected Clients: 7901 / 100000
+
+--- Test Complete (Aggregating Worker Results) ---
+Protocol: WS
+Peak Connections Achieved: 7901 / 100000
+Total Errors: 88123
+Messages Received (Server -> Client): 127390
+Messages Sent (Client -> Server): 0
+Server RSS Memory Profile:
+- Min RSS: 105.63 MB
+- Max RSS: 153.11 MB
+- Avg RSS: 123.53 MB
+
+[SUMMARY_JSON] {"protocol":"ws","connections":7901,"errors":88123,"received":127390,"sent":0,"avgLatency":"N/A","minRss":"105.63","maxRss":"153.11","avgRss":"123.53"}
+
+### Lang: typescript | Mode: sse-http1 (sse-http1) | Bidirectional: false
+=== 100K Clustered Load Tester (Master PID: 83694) ===
+- Protocol: SSE-HTTP1
+- Total Target Connections: 100000
+- Worker Processes: 10
+- Target Connections per Worker: 10000
+- Local IP Pool: 127.0.0.1, 127.0.0.2, 127.0.0.3, 127.0.0.4, 127.0.0.5, 127.0.0.6, 127.0.0.7, 127.0.0.8
+- Bidirectional Mode: false
+- Duration: 30s
+- Detected Target Server PID: 83690
+[SYS-MEM] Server RSS Memory: 285.84 MB | Total Connected Clients: 8704 / 100000
+[SYS-MEM] Server RSS Memory: 286.67 MB | Total Connected Clients: 8846 / 100000
+[SYS-MEM] Server RSS Memory: 287.81 MB | Total Connected Clients: 8904 / 100000
+[SYS-MEM] Server RSS Memory: 216.97 MB | Total Connected Clients: 8911 / 100000
+[SYS-MEM] Server RSS Memory: 224.75 MB | Total Connected Clients: 8912 / 100000
+[SYS-MEM] Server RSS Memory: 227.47 MB | Total Connected Clients: 8940 / 100000
+
+--- Test Complete (Aggregating Worker Results) ---
+Protocol: SSE-HTTP1
+Peak Connections Achieved: 8940 / 100000
+Total Errors: 33589
+Messages Received (Server -> Client): 74331
+Messages Sent (Client -> Server): 0
+Server RSS Memory Profile:
+- Min RSS: 216.97 MB
+- Max RSS: 287.81 MB
+- Avg RSS: 254.92 MB
+
+[SUMMARY_JSON] {"protocol":"sse-http1","connections":8940,"errors":33589,"received":74331,"sent":0,"avgLatency":"N/A","minRss":"216.97","maxRss":"287.81","avgRss":"254.92"}
+
+### Lang: typescript | Mode: sse-http2 (sse-http2) | Bidirectional: false
+=== 100K Clustered Load Tester (Master PID: 83948) ===
+- Protocol: SSE-HTTP2
+- Total Target Connections: 100000
+- Worker Processes: 10
+- Target Connections per Worker: 10000
+- Local IP Pool: 127.0.0.1, 127.0.0.2, 127.0.0.3, 127.0.0.4, 127.0.0.5, 127.0.0.6, 127.0.0.7, 127.0.0.8
+- Bidirectional Mode: false
+- Duration: 30s
+- Detected Target Server PID: 83943
+[SYS-MEM] Server RSS Memory: 1028.22 MB | Total Connected Clients: 100000 / 100000
+[SYS-MEM] Server RSS Memory: 982.31 MB | Total Connected Clients: 100000 / 100000
+[SYS-MEM] Server RSS Memory: 972.13 MB | Total Connected Clients: 100000 / 100000
+[SYS-MEM] Server RSS Memory: 996.19 MB | Total Connected Clients: 100000 / 100000
+[SYS-MEM] Server RSS Memory: 998.30 MB | Total Connected Clients: 100000 / 100000
+[SYS-MEM] Server RSS Memory: 998.41 MB | Total Connected Clients: 100000 / 100000
+
+--- Test Complete (Aggregating Worker Results) ---
+Protocol: SSE-HTTP2
+Peak Connections Achieved: 100000 / 100000
+Total Errors: 0
+Messages Received (Server -> Client): 2820400
+Messages Sent (Client -> Server): 0
+Server RSS Memory Profile:
+- Min RSS: 972.13 MB
+- Max RSS: 1028.22 MB
+- Avg RSS: 995.92 MB
+
+[SUMMARY_JSON] {"protocol":"sse-http2","connections":100000,"errors":0,"received":2820400,"sent":0,"avgLatency":"N/A","minRss":"972.13","maxRss":"1028.22","avgRss":"995.92"}
+
+### Lang: typescript | Mode: ws (ws) | Bidirectional: true
+=== 100K Clustered Load Tester (Master PID: 84146) ===
+- Protocol: WS
+- Total Target Connections: 100000
+- Worker Processes: 10
+- Target Connections per Worker: 10000
+- Local IP Pool: 127.0.0.1, 127.0.0.2, 127.0.0.3, 127.0.0.4, 127.0.0.5, 127.0.0.6, 127.0.0.7, 127.0.0.8
+- Bidirectional Mode: true
+- Duration: 30s
+- Detected Target Server PID: 84142
+[SYS-MEM] Server RSS Memory: 165.66 MB | Total Connected Clients: 10676 / 100000
+[SYS-MEM] Server RSS Memory: 166.09 MB | Total Connected Clients: 10676 / 100000
+[SYS-MEM] Server RSS Memory: 166.86 MB | Total Connected Clients: 10679 / 100000
+[SYS-MEM] Server RSS Memory: 174.70 MB | Total Connected Clients: 10679 / 100000
+[SYS-MEM] Server RSS Memory: 178.23 MB | Total Connected Clients: 2364 / 100000
+
+--- Test Complete (Aggregating Worker Results) ---
+Protocol: WS
+Peak Connections Achieved: 2414 / 100000
+Total Errors: 83779
+Messages Received (Server -> Client): 69783
+Messages Sent (Client -> Server): 38754
+Average Client Write Latency: N/A ms
+Server RSS Memory Profile:
+- Min RSS: 165.66 MB
+- Max RSS: 178.23 MB
+- Avg RSS: 170.31 MB
+
+[SUMMARY_JSON] {"protocol":"ws","connections":2414,"errors":83779,"received":69783,"sent":38754,"avgLatency":"N/A","minRss":"165.66","maxRss":"178.23","avgRss":"170.31"}
+
+### Lang: typescript | Mode: sse-http1 (sse-http1) | Bidirectional: true
+=== 100K Clustered Load Tester (Master PID: 84277) ===
+- Protocol: SSE-HTTP1
+- Total Target Connections: 100000
+- Worker Processes: 10
+- Target Connections per Worker: 10000
+- Local IP Pool: 127.0.0.1, 127.0.0.2, 127.0.0.3, 127.0.0.4, 127.0.0.5, 127.0.0.6, 127.0.0.7, 127.0.0.8
+- Bidirectional Mode: true
+- Duration: 30s
+- Detected Target Server PID: 84275
+[SYS-MEM] Server RSS Memory: 349.92 MB | Total Connected Clients: 12896 / 100000
+[SYS-MEM] Server RSS Memory: 335.77 MB | Total Connected Clients: 12896 / 100000
+[SYS-MEM] Server RSS Memory: 337.19 MB | Total Connected Clients: 12896 / 100000
+[SYS-MEM] Server RSS Memory: 292.92 MB | Total Connected Clients: 12916 / 100000
+[SYS-MEM] Server RSS Memory: 326.31 MB | Total Connected Clients: 12940 / 100000
+
+--- Test Complete (Aggregating Worker Results) ---
+Protocol: SSE-HTTP1
+Peak Connections Achieved: 12952 / 100000
+Total Errors: 43267
+Messages Received (Server -> Client): 38197
+Messages Sent (Client -> Server): 0
+Average Client Write Latency: N/A ms
+Server RSS Memory Profile:
+- Min RSS: 292.92 MB
+- Max RSS: 349.92 MB
+- Avg RSS: 328.42 MB
+
+[SUMMARY_JSON] {"protocol":"sse-http1","connections":12952,"errors":43267,"received":38197,"sent":0,"avgLatency":"N/A","minRss":"292.92","maxRss":"349.92","avgRss":"328.42"}
+
+### Lang: typescript | Mode: sse-http2 (sse-http2) | Bidirectional: true
+=== 100K Clustered Load Tester (Master PID: 84454) ===
+- Protocol: SSE-HTTP2
+- Total Target Connections: 100000
+- Worker Processes: 10
+- Target Connections per Worker: 10000
+- Local IP Pool: 127.0.0.1, 127.0.0.2, 127.0.0.3, 127.0.0.4, 127.0.0.5, 127.0.0.6, 127.0.0.7, 127.0.0.8
+- Bidirectional Mode: true
+- Duration: 30s
+- Detected Target Server PID: 84452
+[SYS-MEM] Server RSS Memory: 1072.78 MB | Total Connected Clients: 100000 / 100000
+[SYS-MEM] Server RSS Memory: 1240.91 MB | Total Connected Clients: 0 / 100000
+[SYS-MEM] Server RSS Memory: 1240.91 MB | Total Connected Clients: 0 / 100000
+[SYS-MEM] Server RSS Memory: 1240.91 MB | Total Connected Clients: 0 / 100000
+[SYS-MEM] Server RSS Memory: 1240.91 MB | Total Connected Clients: 0 / 100000
+
+--- Test Complete (Aggregating Worker Results) ---
+Protocol: SSE-HTTP2
+Peak Connections Achieved: 0 / 100000
+Total Errors: 1010
+Messages Received (Server -> Client): 429674
+Messages Sent (Client -> Server): 37450
+Average Client Write Latency: 1.42 ms
+Server RSS Memory Profile:
+- Min RSS: 1072.78 MB
+- Max RSS: 1240.91 MB
+- Avg RSS: 1207.28 MB
+
+[SUMMARY_JSON] {"protocol":"sse-http2","connections":0,"errors":1010,"received":429674,"sent":37450,"avgLatency":"1.42","minRss":"1072.78","maxRss":"1240.91","avgRss":"1207.28"}
+
+### Lang: go | Mode: ws (ws) | Bidirectional: false
+=== 100K Clustered Load Tester (Master PID: 84599) ===
+- Protocol: WS
+- Total Target Connections: 100000
+- Worker Processes: 10
+- Target Connections per Worker: 10000
+- Local IP Pool: 127.0.0.1, 127.0.0.2, 127.0.0.3, 127.0.0.4, 127.0.0.5, 127.0.0.6, 127.0.0.7, 127.0.0.8
+- Bidirectional Mode: false
+- Duration: 30s
+- Detected Target Server PID: 84595
+[SYS-MEM] Server RSS Memory: 404.53 MB | Total Connected Clients: 11517 / 100000
+[SYS-MEM] Server RSS Memory: 437.67 MB | Total Connected Clients: 11518 / 100000
+[SYS-MEM] Server RSS Memory: 470.03 MB | Total Connected Clients: 11521 / 100000
+[SYS-MEM] Server RSS Memory: 475.66 MB | Total Connected Clients: 5086 / 100000
+[SYS-MEM] Server RSS Memory: 475.95 MB | Total Connected Clients: 3314 / 100000
+
+--- Test Complete (Aggregating Worker Results) ---
+Protocol: WS
+Peak Connections Achieved: 3309 / 100000
+Total Errors: 83753
+Messages Received (Server -> Client): 106270
+Messages Sent (Client -> Server): 0
+Server RSS Memory Profile:
+- Min RSS: 404.53 MB
+- Max RSS: 475.95 MB
+- Avg RSS: 452.77 MB
+
+[SUMMARY_JSON] {"protocol":"ws","connections":3309,"errors":83753,"received":106270,"sent":0,"avgLatency":"N/A","minRss":"404.53","maxRss":"475.95","avgRss":"452.77"}
+
+### Lang: go | Mode: sse1 (sse-http1) | Bidirectional: false
+=== 100K Clustered Load Tester (Master PID: 84750) ===
+- Protocol: SSE-HTTP1
+- Total Target Connections: 100000
+- Worker Processes: 10
+- Target Connections per Worker: 10000
+- Local IP Pool: 127.0.0.1, 127.0.0.2, 127.0.0.3, 127.0.0.4, 127.0.0.5, 127.0.0.6, 127.0.0.7, 127.0.0.8
+- Bidirectional Mode: false
+- Duration: 30s
+- Detected Target Server PID: 84698
+[SYS-MEM] Server RSS Memory: 644.42 MB | Total Connected Clients: 16368 / 100000
+[SYS-MEM] Server RSS Memory: 645.64 MB | Total Connected Clients: 16368 / 100000
+[SYS-MEM] Server RSS Memory: 647.06 MB | Total Connected Clients: 16378 / 100000
+[SYS-MEM] Server RSS Memory: 651.77 MB | Total Connected Clients: 16378 / 100000
+[SYS-MEM] Server RSS Memory: 652.06 MB | Total Connected Clients: 16378 / 100000
+
+--- Test Complete (Aggregating Worker Results) ---
+Protocol: SSE-HTTP1
+Peak Connections Achieved: 16517 / 100000
+Total Errors: 52897
+Messages Received (Server -> Client): 18693
+Messages Sent (Client -> Server): 0
+Server RSS Memory Profile:
+- Min RSS: 644.42 MB
+- Max RSS: 652.06 MB
+- Avg RSS: 648.19 MB
+
+[SUMMARY_JSON] {"protocol":"sse-http1","connections":16517,"errors":52897,"received":18693,"sent":0,"avgLatency":"N/A","minRss":"644.42","maxRss":"652.06","avgRss":"648.19"}
+
+### Lang: go | Mode: sse2 (sse-http2) | Bidirectional: false
+=== 100K Clustered Load Tester (Master PID: 84957) ===
+- Protocol: SSE-HTTP2
+- Total Target Connections: 100000
+- Worker Processes: 10
+- Target Connections per Worker: 10000
+- Local IP Pool: 127.0.0.1, 127.0.0.2, 127.0.0.3, 127.0.0.4, 127.0.0.5, 127.0.0.6, 127.0.0.7, 127.0.0.8
+- Bidirectional Mode: false
+- Duration: 30s
+- Detected Target Server PID: 84908
+[SYS-MEM] Server RSS Memory: 1285.88 MB | Total Connected Clients: 100000 / 100000
+[SYS-MEM] Server RSS Memory: 1297.47 MB | Total Connected Clients: 100000 / 100000
+[SYS-MEM] Server RSS Memory: 1306.38 MB | Total Connected Clients: 100000 / 100000
+[SYS-MEM] Server RSS Memory: 1316.73 MB | Total Connected Clients: 100000 / 100000
+[SYS-MEM] Server RSS Memory: 1318.38 MB | Total Connected Clients: 100000 / 100000
+
+--- Test Complete (Aggregating Worker Results) ---
+Protocol: SSE-HTTP2
+Peak Connections Achieved: 100000 / 100000
+Total Errors: 0
+Messages Received (Server -> Client): 2522300
+Messages Sent (Client -> Server): 0
+Server RSS Memory Profile:
+- Min RSS: 1285.88 MB
+- Max RSS: 1318.38 MB
+- Avg RSS: 1304.97 MB
+
+[SUMMARY_JSON] {"protocol":"sse-http2","connections":100000,"errors":0,"received":2522300,"sent":0,"avgLatency":"N/A","minRss":"1285.88","maxRss":"1318.38","avgRss":"1304.97"}
+
+### Lang: go | Mode: ws (ws) | Bidirectional: true
+=== 100K Clustered Load Tester (Master PID: 85353) ===
+- Protocol: WS
+- Total Target Connections: 100000
+- Worker Processes: 10
+- Target Connections per Worker: 10000
+- Local IP Pool: 127.0.0.1, 127.0.0.2, 127.0.0.3, 127.0.0.4, 127.0.0.5, 127.0.0.6, 127.0.0.7, 127.0.0.8
+- Bidirectional Mode: true
+- Duration: 30s
+- Detected Target Server PID: 85283
+[SYS-MEM] Server RSS Memory: 365.53 MB | Total Connected Clients: 10250 / 100000
+[SYS-MEM] Server RSS Memory: 435.02 MB | Total Connected Clients: 10253 / 100000
+[SYS-MEM] Server RSS Memory: 435.39 MB | Total Connected Clients: 10256 / 100000
+[SYS-MEM] Server RSS Memory: 435.45 MB | Total Connected Clients: 78 / 100000
+[SYS-MEM] Server RSS Memory: 435.47 MB | Total Connected Clients: 90 / 100000
+
+--- Test Complete (Aggregating Worker Results) ---
+Protocol: WS
+Peak Connections Achieved: 5615 / 100000
+Total Errors: 83700
+Messages Received (Server -> Client): 60551
+Messages Sent (Client -> Server): 30864
+Average Client Write Latency: N/A ms
+Server RSS Memory Profile:
+- Min RSS: 365.53 MB
+- Max RSS: 435.47 MB
+- Avg RSS: 421.37 MB
+
+[SUMMARY_JSON] {"protocol":"ws","connections":5615,"errors":83700,"received":60551,"sent":30864,"avgLatency":"N/A","minRss":"365.53","maxRss":"435.47","avgRss":"421.37"}
+
+### Lang: go | Mode: sse1 (sse-http1) | Bidirectional: true
+=== 100K Clustered Load Tester (Master PID: 85537) ===
+- Protocol: SSE-HTTP1
+- Total Target Connections: 100000
+- Worker Processes: 10
+- Target Connections per Worker: 10000
+- Local IP Pool: 127.0.0.1, 127.0.0.2, 127.0.0.3, 127.0.0.4, 127.0.0.5, 127.0.0.6, 127.0.0.7, 127.0.0.8
+- Bidirectional Mode: true
+- Duration: 30s
+- Detected Target Server PID: 85493
+[SYS-MEM] Server RSS Memory: 676.27 MB | Total Connected Clients: 16370 / 100000
+[SYS-MEM] Server RSS Memory: 677.59 MB | Total Connected Clients: 16370 / 100000
+[SYS-MEM] Server RSS Memory: 678.89 MB | Total Connected Clients: 16370 / 100000
+[SYS-MEM] Server RSS Memory: 682.81 MB | Total Connected Clients: 16372 / 100000
+[SYS-MEM] Server RSS Memory: 683.83 MB | Total Connected Clients: 16373 / 100000
+
+--- Test Complete (Aggregating Worker Results) ---
+Protocol: SSE-HTTP1
+Peak Connections Achieved: 16375 / 100000
+Total Errors: 24589
+Messages Received (Server -> Client): 53297
+Messages Sent (Client -> Server): 0
+Average Client Write Latency: N/A ms
+Server RSS Memory Profile:
+- Min RSS: 676.27 MB
+- Max RSS: 683.83 MB
+- Avg RSS: 679.88 MB
+
+[SUMMARY_JSON] {"protocol":"sse-http1","connections":16375,"errors":24589,"received":53297,"sent":0,"avgLatency":"N/A","minRss":"676.27","maxRss":"683.83","avgRss":"679.88"}
+
+### Lang: go | Mode: sse2 (sse-http2) | Bidirectional: true
+=== 100K Clustered Load Tester (Master PID: 85730) ===
+- Protocol: SSE-HTTP2
+- Total Target Connections: 100000
+- Worker Processes: 10
+- Target Connections per Worker: 10000
+- Local IP Pool: 127.0.0.1, 127.0.0.2, 127.0.0.3, 127.0.0.4, 127.0.0.5, 127.0.0.6, 127.0.0.7, 127.0.0.8
+- Bidirectional Mode: true
+- Duration: 30s
+- Detected Target Server PID: 85689
+[SYS-MEM] Server RSS Memory: 1267.67 MB | Total Connected Clients: 100000 / 100000
+[SYS-MEM] Server RSS Memory: 2377.72 MB | Total Connected Clients: 100000 / 100000
+[SYS-MEM] Server RSS Memory: 2976.63 MB | Total Connected Clients: 100000 / 100000
+[SYS-MEM] Server RSS Memory: 3293.20 MB | Total Connected Clients: 100000 / 100000
+[SYS-MEM] Server RSS Memory: 4015.30 MB | Total Connected Clients: 100000 / 100000
+[SYS-MEM] Server RSS Memory: 4015.84 MB | Total Connected Clients: 100000 / 100000
+
+--- Test Complete (Aggregating Worker Results) ---
+Protocol: SSE-HTTP2
+Peak Connections Achieved: 100000 / 100000
+Total Errors: 419611
+Messages Received (Server -> Client): 1420299
+Messages Sent (Client -> Server): 28931
+Average Client Write Latency: 2189.47 ms
+Server RSS Memory Profile:
+- Min RSS: 1267.67 MB
+- Max RSS: 4015.84 MB
+- Avg RSS: 2991.06 MB
+
+[SUMMARY_JSON] {"protocol":"sse-http2","connections":100000,"errors":419611,"received":1420299,"sent":28931,"avgLatency":"2189.47","minRss":"1267.67","maxRss":"4015.84","avgRss":"2991.06"}
+
+### Lang: rust | Mode: ws (ws) | Bidirectional: false
+=== 100K Clustered Load Tester (Master PID: 85911) ===
+- Protocol: WS
+- Total Target Connections: 100000
+- Worker Processes: 10
+- Target Connections per Worker: 10000
+- Local IP Pool: 127.0.0.1, 127.0.0.2, 127.0.0.3, 127.0.0.4, 127.0.0.5, 127.0.0.6, 127.0.0.7, 127.0.0.8
+- Bidirectional Mode: false
+- Duration: 30s
+- Detected Target Server PID: 85870
+[SYS-MEM] Server RSS Memory: 138.25 MB | Total Connected Clients: 10558 / 100000
+[SYS-MEM] Server RSS Memory: 138.47 MB | Total Connected Clients: 10570 / 100000
+[SYS-MEM] Server RSS Memory: 138.48 MB | Total Connected Clients: 10570 / 100000
+[SYS-MEM] Server RSS Memory: 139.17 MB | Total Connected Clients: 6362 / 100000
+[SYS-MEM] Server RSS Memory: 139.17 MB | Total Connected Clients: 6414 / 100000
+
+--- Test Complete (Aggregating Worker Results) ---
+Protocol: WS
+Peak Connections Achieved: 9265 / 100000
+Total Errors: 83673
+Messages Received (Server -> Client): 194763
+Messages Sent (Client -> Server): 0
+Server RSS Memory Profile:
+- Min RSS: 138.25 MB
+- Max RSS: 139.17 MB
+- Avg RSS: 138.71 MB
+
+[SUMMARY_JSON] {"protocol":"ws","connections":9265,"errors":83673,"received":194763,"sent":0,"avgLatency":"N/A","minRss":"138.25","maxRss":"139.17","avgRss":"138.71"}
+
+### Lang: rust | Mode: sse1 (sse-http1) | Bidirectional: false
+=== 100K Clustered Load Tester (Master PID: 86164) ===
+- Protocol: SSE-HTTP1
+- Total Target Connections: 100000
+- Worker Processes: 10
+- Target Connections per Worker: 10000
+- Local IP Pool: 127.0.0.1, 127.0.0.2, 127.0.0.3, 127.0.0.4, 127.0.0.5, 127.0.0.6, 127.0.0.7, 127.0.0.8
+- Bidirectional Mode: false
+- Duration: 30s
+- Detected Target Server PID: 86088
+[SYS-MEM] Server RSS Memory: 205.86 MB | Total Connected Clients: 5806 / 100000
+[SYS-MEM] Server RSS Memory: 206.44 MB | Total Connected Clients: 6412 / 100000
+[SYS-MEM] Server RSS Memory: 206.63 MB | Total Connected Clients: 6424 / 100000
+[SYS-MEM] Server RSS Memory: 206.80 MB | Total Connected Clients: 6425 / 100000
+[SYS-MEM] Server RSS Memory: 206.91 MB | Total Connected Clients: 6436 / 100000
+
+--- Test Complete (Aggregating Worker Results) ---
+Protocol: SSE-HTTP1
+Peak Connections Achieved: 6450 / 100000
+Total Errors: 77210
+Messages Received (Server -> Client): 85845
+Messages Sent (Client -> Server): 0
+Server RSS Memory Profile:
+- Min RSS: 205.86 MB
+- Max RSS: 206.91 MB
+- Avg RSS: 206.53 MB
+
+[SUMMARY_JSON] {"protocol":"sse-http1","connections":6450,"errors":77210,"received":85845,"sent":0,"avgLatency":"N/A","minRss":"205.86","maxRss":"206.91","avgRss":"206.53"}
+
+### Lang: rust | Mode: sse2 (sse-http2) | Bidirectional: false
+=== 100K Clustered Load Tester (Master PID: 86328) ===
+- Protocol: SSE-HTTP2
+- Total Target Connections: 100000
+- Worker Processes: 10
+- Target Connections per Worker: 10000
+- Local IP Pool: 127.0.0.1, 127.0.0.2, 127.0.0.3, 127.0.0.4, 127.0.0.5, 127.0.0.6, 127.0.0.7, 127.0.0.8
+- Bidirectional Mode: false
+- Duration: 30s
+- Detected Target Server PID: 86284
+[SYS-MEM] Server RSS Memory: 7.61 MB | Total Connected Clients: 0 / 100000
+[SYS-MEM] Server RSS Memory: 7.64 MB | Total Connected Clients: 0 / 100000
+[SYS-MEM] Server RSS Memory: 7.64 MB | Total Connected Clients: 0 / 100000
+[SYS-MEM] Server RSS Memory: 7.64 MB | Total Connected Clients: 0 / 100000
+[SYS-MEM] Server RSS Memory: 7.66 MB | Total Connected Clients: 0 / 100000
+
+--- Test Complete (Aggregating Worker Results) ---
+Protocol: SSE-HTTP2
+Peak Connections Achieved: 0 / 100000
+Total Errors: 102000
+Messages Received (Server -> Client): 0
+Messages Sent (Client -> Server): 0
+Server RSS Memory Profile:
+- Min RSS: 7.61 MB
+- Max RSS: 7.66 MB
+- Avg RSS: 7.64 MB
+
+[SUMMARY_JSON] {"protocol":"sse-http2","connections":0,"errors":102000,"received":0,"sent":0,"avgLatency":"N/A","minRss":"7.61","maxRss":"7.66","avgRss":"7.64"}
+
+### Lang: rust | Mode: ws (ws) | Bidirectional: true
+=== 100K Clustered Load Tester (Master PID: 86508) ===
+- Protocol: WS
+- Total Target Connections: 100000
+- Worker Processes: 10
+- Target Connections per Worker: 10000
+- Local IP Pool: 127.0.0.1, 127.0.0.2, 127.0.0.3, 127.0.0.4, 127.0.0.5, 127.0.0.6, 127.0.0.7, 127.0.0.8
+- Bidirectional Mode: true
+- Duration: 30s
+- Detected Target Server PID: 86504
+[SYS-MEM] Server RSS Memory: 141.02 MB | Total Connected Clients: 10713 / 100000
+[SYS-MEM] Server RSS Memory: 141.03 MB | Total Connected Clients: 10713 / 100000
+[SYS-MEM] Server RSS Memory: 141.08 MB | Total Connected Clients: 10713 / 100000
+[SYS-MEM] Server RSS Memory: 141.17 MB | Total Connected Clients: 10713 / 100000
+[SYS-MEM] Server RSS Memory: 141.36 MB | Total Connected Clients: 1719 / 100000
+
+--- Test Complete (Aggregating Worker Results) ---
+Protocol: WS
+Peak Connections Achieved: 2304 / 100000
+Total Errors: 83699
+Messages Received (Server -> Client): 22740
+Messages Sent (Client -> Server): 44100
+Average Client Write Latency: N/A ms
+Server RSS Memory Profile:
+- Min RSS: 141.02 MB
+- Max RSS: 141.36 MB
+- Avg RSS: 141.13 MB
+
+[SUMMARY_JSON] {"protocol":"ws","connections":2304,"errors":83699,"received":22740,"sent":44100,"avgLatency":"N/A","minRss":"141.02","maxRss":"141.36","avgRss":"141.13"}
+
+### Lang: rust | Mode: sse1 (sse-http1) | Bidirectional: true
+=== 100K Clustered Load Tester (Master PID: 86566) ===
+- Protocol: SSE-HTTP1
+- Total Target Connections: 100000
+- Worker Processes: 10
+- Target Connections per Worker: 10000
+- Local IP Pool: 127.0.0.1, 127.0.0.2, 127.0.0.3, 127.0.0.4, 127.0.0.5, 127.0.0.6, 127.0.0.7, 127.0.0.8
+- Bidirectional Mode: true
+- Duration: 30s
+- Detected Target Server PID: 86564
+[SYS-MEM] Server RSS Memory: 333.19 MB | Total Connected Clients: 10582 / 100000
+[SYS-MEM] Server RSS Memory: 333.45 MB | Total Connected Clients: 10583 / 100000
+[SYS-MEM] Server RSS Memory: 333.55 MB | Total Connected Clients: 10584 / 100000
+[SYS-MEM] Server RSS Memory: 333.63 MB | Total Connected Clients: 10584 / 100000
+[SYS-MEM] Server RSS Memory: 333.66 MB | Total Connected Clients: 10584 / 100000
+
+--- Test Complete (Aggregating Worker Results) ---
+Protocol: SSE-HTTP1
+Peak Connections Achieved: 10585 / 100000
+Total Errors: 70259
+Messages Received (Server -> Client): 82173
+Messages Sent (Client -> Server): 0
+Average Client Write Latency: N/A ms
+Server RSS Memory Profile:
+- Min RSS: 333.19 MB
+- Max RSS: 333.66 MB
+- Avg RSS: 333.49 MB
+
+[SUMMARY_JSON] {"protocol":"sse-http1","connections":10585,"errors":70259,"received":82173,"sent":0,"avgLatency":"N/A","minRss":"333.19","maxRss":"333.66","avgRss":"333.49"}
+
+### Lang: rust | Mode: sse2 (sse-http2) | Bidirectional: true
+=== 100K Clustered Load Tester (Master PID: 86670) ===
+- Protocol: SSE-HTTP2
+- Total Target Connections: 100000
+- Worker Processes: 10
+- Target Connections per Worker: 10000
+- Local IP Pool: 127.0.0.1, 127.0.0.2, 127.0.0.3, 127.0.0.4, 127.0.0.5, 127.0.0.6, 127.0.0.7, 127.0.0.8
+- Bidirectional Mode: true
+- Duration: 30s
+- Detected Target Server PID: 86667
+[SYS-MEM] Server RSS Memory: 7.64 MB | Total Connected Clients: 0 / 100000
+[SYS-MEM] Server RSS Memory: 7.67 MB | Total Connected Clients: 0 / 100000
+[SYS-MEM] Server RSS Memory: 7.67 MB | Total Connected Clients: 0 / 100000
+[SYS-MEM] Server RSS Memory: 7.67 MB | Total Connected Clients: 0 / 100000
+[SYS-MEM] Server RSS Memory: 7.67 MB | Total Connected Clients: 0 / 100000
+
+--- Test Complete (Aggregating Worker Results) ---
+Protocol: SSE-HTTP2
+Peak Connections Achieved: 0 / 100000
+Total Errors: 100188
+Messages Received (Server -> Client): 0
+Messages Sent (Client -> Server): 0
+Average Client Write Latency: N/A ms
+Server RSS Memory Profile:
+- Min RSS: 7.64 MB
+- Max RSS: 7.67 MB
+- Avg RSS: 7.67 MB
+
+[SUMMARY_JSON] {"protocol":"sse-http2","connections":0,"errors":100188,"received":0,"sent":0,"avgLatency":"N/A","minRss":"7.64","maxRss":"7.67","avgRss":"7.67"}

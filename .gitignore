@@ -1,0 +1,5 @@
+node_modules/
+dist/
+target/
+go/go-server
+.DS_Store
